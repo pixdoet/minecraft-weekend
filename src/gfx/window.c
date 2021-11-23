@@ -83,7 +83,7 @@ void window_create(FWindow init, FWindow destroy, FWindow tick,  FWindow update,
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
     window.size = (ivec2s) {{1280, 720}};
-    window.handle = glfwCreateWindow(window.size.x, window.size.y, "Project", NULL, NULL);
+    window.handle = glfwCreateWindow(window.size.x, window.size.y, "C Minecraft 1.0", NULL, NULL);
     if (window.handle == NULL) {
         fprintf(stderr, "%s",  "error creating window\n");
         glfwTerminate();
@@ -167,7 +167,7 @@ void window_loop() {
             window.ticks = 0;
             window.last_second = now;
 
-            printf("FPS: %lld | TPS: %lld\n", window.fps, window.tps);
+            // printf("FPS: %lld | TPS: %lld\n", window.fps, window.tps);
         }
 
         // tick processing
