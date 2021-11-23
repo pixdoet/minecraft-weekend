@@ -150,7 +150,6 @@ static void _render() {
     window.frames++;
     window.render();
 }
-
 void window_loop(bool showFps) {
     _init();
 
@@ -169,8 +168,8 @@ void window_loop(bool showFps) {
 
             if (showFps)
             {
-                printf("FPS: %lld | TPS: %lld\n", window.fps, window.tps)
-            };
+                printf("FPS: %lld | TPS: %lld\n", window.fps, window.tps);
+            }
         }
 
         // tick processing
