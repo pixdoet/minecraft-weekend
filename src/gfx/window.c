@@ -151,7 +151,7 @@ static void _render() {
     window.render();
 }
 
-void window_loop() {
+void window_loop(bool showFps) {
     _init();
 
     while (!glfwWindowShouldClose(window.handle)) {
@@ -167,7 +167,10 @@ void window_loop() {
             window.ticks = 0;
             window.last_second = now;
 
-            // printf("FPS: %lld | TPS: %lld\n", window.fps, window.tps);
+            if (showFps)
+            {
+                printf("FPS: %lld | TPS: %lld\n", window.fps, window.tps)
+            };
         }
 
         // tick processing

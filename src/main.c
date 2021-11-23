@@ -108,5 +108,10 @@ void render() {
 
 int main(int argc, char *argv[]) {
     window_create(init, destroy, tick, update, render);
-    window_loop();
+    if(argc >= 1 && argv[0] == "showfps"){
+        window_loop(true);
+    }
+    else{
+        window_loop(false);
+    }
 }
