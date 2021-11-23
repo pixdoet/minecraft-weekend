@@ -108,5 +108,5 @@ void render() {
 
 int main(int argc, char *argv[]) {
     window_create(init, destroy, tick, update, render);
-    window_loop(true);
+    window_loop(false);
 }

@@ -83,7 +83,7 @@ void window_create(FWindow init, FWindow destroy, FWindow tick,  FWindow update,
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
     window.size = (ivec2s) {{1280, 720}};
-    window.handle = glfwCreateWindow(window.size.x, window.size.y, "C Minecraft 1.0", NULL, NULL);
+    window.handle = glfwCreateWindow(window.size.x, window.size.y, "Ian C Minecraft 1.1", NULL, NULL);
     if (window.handle == NULL) {
         fprintf(stderr, "%s",  "error creating window\n");
         glfwTerminate();
